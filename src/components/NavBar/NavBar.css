@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(182, 238, 51);
+    font-family: 'Roboto', sans-serif;
+}
+
+.box_logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.box_logo img {
+    width: 100px;
+    vertical-align: top;
+}
+
+.box_logo p {
+    line-height: 50px;
+}
+
+
+.nav_principal {
+    display: flex;
+}
+
+.nav_principal p {
+    cursor: pointer;
+    line-height: 51px;
+    font-weight: bold;
+    border-radius: 39%;
+    padding: 0px 11px;
+    background-color: white;
+}
+
+.nav_principal ul {
+    list-style: none;
+    display: flex;
+    margin: 30px;
+}
+
+.nav_principal ul li {
+    margin: 0px 14.8px;
+    cursor: pointer;
+}
+
+.box_login p {
+    cursor: pointer;
+    line-height: 51px;
+    font-weight: bold;
+    border-radius: 30%;
+    padding: 0px 11px;
+    background-color: white;
+}
