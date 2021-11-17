@@ -5,7 +5,7 @@ const ItemListContainer = (props) => {
     return (
         <div>
             {props.greeting}
-            <ItemCount stock="5" initial="1" />
+            <ItemCount stock="5" initial="1" nameProducto="Camisa Tiwi" />
         </div>
     )
 }

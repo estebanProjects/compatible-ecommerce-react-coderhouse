@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './ItemCount.css'
 
-const ItemCount = ({stock, initial}) => {
+const ItemCount = ({stock, initial, nameProducto}) => {
 
     let [counter, setCounter] = useState(`${initial}`)
     counter = Number(counter)
@@ -19,7 +19,7 @@ const ItemCount = ({stock, initial}) => {
 
     return (
         <div className="Card">
-            <p className="prod">Camisa Tiwi</p>
+            <p className="prod">{nameProducto}</p>
             <div className="Control_button">
                 <button onClick={onDecrese}>-</button>
                 <p>{counter}</p>
