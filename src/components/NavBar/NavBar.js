@@ -1,7 +1,7 @@
 import "./NavBar.css"
 import logo from '../../logo.svg';
 
-import AiOutlineShoppingCart from '../CartWidget/CartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
     return(
@@ -18,7 +18,7 @@ const NavBar = () => {
                     <li>Libros</li>
                 </ul>
             </nav>
-            <AiOutlineShoppingCart/>
+            <CartWidget/>
             <div className="box_login">
                 <p>Login</p>
             </div>
