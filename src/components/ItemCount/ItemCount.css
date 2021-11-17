@@ -29,8 +29,14 @@
 }
 
 .addCart {
-    border: 1px solid blue;
+    border: 1px solid rgba(55, 55, 241, 0.63);
+    color: rgba(17, 17, 17, 0.767);
     border-radius: 10px;
     padding: 5px;
     cursor: pointer;
+}
+
+.addCart:hover {
+    border: 1px solid blue;
+    color: black;
 }
