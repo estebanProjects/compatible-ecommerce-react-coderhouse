@@ -1,0 +1,11 @@
+.Container_All {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
