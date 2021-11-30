@@ -9,19 +9,18 @@ const ItemList = () => {
     useEffect(() => {
         fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink')
          .then((response) => response.json())
-         .then((json) => setUsers(json))
+         .then((json) => {
+            json = json.drinks
+            setUsers(json)
+         })
     }, [])
 
     return (
         <div className="Container_All">
             <div className="Container">
                     {
-                        productos.drinks.map((producto) => {
+                        productos.map((producto) => {
                             producto.stock = Math.floor(Math.random()*35)
-                        })
-                    }
-                    {
-                        productos.drinks.map((producto) => {
                             return <Item data={producto} key={producto.idDrink} btnStr="Ver detalles del producto" alt="Img-Producto"/>
                         })
                     }
