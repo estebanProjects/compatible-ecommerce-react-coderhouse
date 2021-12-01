@@ -1,0 +1,58 @@
+.Container_Detail {
+    margin: 0 auto;
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    width: 1000px;
+}
+
+.Container_Detail .Image_Main {
+    height: 520px;
+    border-radius: 9.2px;
+}
+
+.Container_Detail .Detalles {
+    padding: 20px;
+    text-align: initial;
+}
+
+.Container_Detail .Detalles .info_extra {
+    display: flex;
+}
+.Container_Detail .Detalles .info_extra p {
+    font-size: 12px;
+    margin: 7px;
+}
+
+.Container_Detail .Detalles .title_d {
+    display: flex;
+    flex-direction: column;
+}
+.Container_Detail .Detalles h2 {
+    font-size: 25px;
+}
+.Container_Detail .Detalles p {
+    font-size: 19.6px;
+}
+
+.Container_Detail .Detalles .precio {
+    display: flex;
+}
+.Container_Detail .Detalles .precio .price {
+    font-size: 32px;
+    margin-right: 7px;
+}
+.Container_Detail .Detalles .precio .descuento {
+    line-height: 3.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Container_Detail .Detalles .other_images_similares img {
+    margin: 5px;
+    border-radius: 8.5px;
+}
+
+
+.Detalles .other_images_similares img {
+    height: 50px;
+}
