@@ -1,32 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Home from './views/Home/Home';
+import Category from './views/Category/Category';
 
-function App() {
+
+const App = () => { 
+
   return (
     <div className="App">
-      <NavBar/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <ItemListContainer greeting="¡Bienvenido al mejor Ecommerce!" />
-        </p>
-        <p>
-          Encuentra todo lo que necesitas aquí, en TiwiShop
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <ItemDetailContainer/>
-      </header>
+      <Router>
+        <NavBar/>
+        <Routes>
+          <Route path='/' element={<Home bebidaCtg="Alcoholic" AoC="a" />}></Route>
+          <Route path='/category/:id' element={<Category AoC="c" />}></Route>
+          <Route path='/item/:id' element={<ItemDetailContainer />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import "./NavBar.css"
 import logo from '../../logo.svg';
+import { Link } from "react-router-dom";
 
 import CartWidget from '../CartWidget/CartWidget'
 
@@ -11,11 +12,16 @@ const NavBar = () => {
                 <p>TiwiShop</p>
             </div>
             <nav className="nav_principal">
-                <p>Inicio</p>
+                <Link to="/" className="item">
+                    <p>Inicio</p>
+                </Link>
                 <ul>
-                    <li>Ofertas</li>
-                    <li>Electrodomésticos</li>
-                    <li>Libros</li>
+                    <Link to="/category/Ordinary_Drink" className="item">
+                        <li>Bebidas Ordinarias</li>
+                    </Link>
+                    <Link to="/category/Cocktail" className="item">
+                        <li>Cócteles</li>
+                    </Link>
                 </ul>
             </nav>
             <CartWidget/>

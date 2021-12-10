@@ -3,11 +3,12 @@ import './ItemList.css'
 
 import Item from '../Item/Item'
 
-const ItemList = () => {
-    const [productos, setUsers] = useState([])
 
+const ItemList = ({bebidaCtg, AoC}) => {    
+    const [productos, setUsers] = useState([])
+    console.log(bebidaCtg)
     useEffect(() => {
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink')
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?${AoC}=${bebidaCtg}`)
          .then((response) => response.json())
          .then((json) => {
             json = json.drinks

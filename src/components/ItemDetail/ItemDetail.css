@@ -9,6 +9,7 @@
 .Container_Detail .Image_Main {
     height: 520px;
     border-radius: 9.2px;
+    cursor: pointer;
 }
 
 .Container_Detail .Detalles {

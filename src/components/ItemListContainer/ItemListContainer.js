@@ -7,7 +7,8 @@ const ItemListContainer = (props) => {
     return (
         <div className="greet">
             <p>{props.greeting}</p>
-            <ItemList />
+            {console.log(props.categoryId)}
+            <ItemList bebidaCtg={props.categoryId} AoC={props.AoC} />
         </div>
     )
 }
